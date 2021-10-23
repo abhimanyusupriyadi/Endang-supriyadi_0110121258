@@ -1,0 +1,87 @@
+<!doctype html><html><head> 
+  <title>Form Pesanan Barang</title> 
+ </head> 
+ <body bgcolor="Gainsboro"> 
+  <div style="background-color: white;"> 
+   <table style="width: 800px;"> 
+    <tbody>
+     <tr> 
+      <td>Home |</td> 
+      <td>Generate Link |</td> 
+      <td>Transaction History |</td> 
+      <td>Policy |</td> 
+      <td>logout</td> 
+     </tr> 
+    </tbody>
+   </table> 
+  </div> 
+  <br> 
+  <br> 
+  <div style="display: flex; margin-left: 0px;"> 
+   <div> 
+    <img src="download.jpg" alt="" style="width: 200px; height: 200px;"> 
+    <form action="upload.php" method="POST" enctype="multipart/from-data"> 
+     <input type="file" name="photo"> 
+    </form> 
+   </div> 
+   <div style="margin-left: 50px;"> 
+    <form action="upload.php" method="post"> 
+     <table style="height: 450px;"> 
+      <tbody>
+       <tr>
+        <td>Title here :</td> 
+        <td> <input type="text" style="width: 250px;" placeholder="Tittle here"> </td> 
+       </tr>
+       <tr> 
+        <td>Description :</td> 
+        <td> <textarea name="desc" id="desc" cols="35" rows="5" placeholder="Description"></textarea> </td> 
+       </tr> 
+       <tr> 
+        <td>Account Number :</td> 
+        <td> <input type="text" style="width: 250px;" placeholder="Account number"> </td> 
+       </tr> 
+       <tr> 
+        <td>Bank : </td> 
+        <td><input type="text" list="Bank"> <datalist id="Bank" name="Bank"> <option value="mandiri"></option> <option value="BCA"></option> <option value="BRI"></option> <option value="CIMB"></option> <option value="BNI"></option> </datalist></td> 
+       </tr> 
+       <tr> 
+        <td>Account Holder : </td> 
+        <td><input type="text" placeholder="Account Holder"></td> 
+       </tr> 
+       <tr>
+        <td><label for="Transaction">Transaction</label></td> 
+        <td><select id="for&quot;Transaction&quot;"></select></td> 
+       </tr>
+      </tbody>
+     </table> 
+     <dd> 
+      <div>
+        *if the Trasaction for the 3 person, choose 3 from the dropdown list  
+      </div>
+     </dd>
+     <dd style="color: green;"> 
+      <input type="checkbox" id="send1" name="send1" value="send1"> 
+      <label for="send1">Send to mobile phone</label>
+      <br> 
+      <input type="checkbox" id="send2" name="send2" value="send2"> 
+      <label for="send2">Send to email</label>
+      <br> 
+     </dd>
+    </form>
+   </div>  
+   <table> 
+    <tbody>
+     <tr> 
+      <td>Send to mobile phone : </td> 
+      <td><input type="text" placeholder="send to mobile phone"></td> 
+     </tr> 
+     <tr> 
+      <td>Send to email</td> 
+      <td><input type="email" placeholder="send to email"></td> 
+     </tr> 
+    </tbody>
+   </table> 
+   <p> <input type="submit" value="Generate Link" style="width: 150px; color: white; background-color: green; margin-left: 167px; text-align: center;"> </p> 
+  </div>
+ 
+</body></html>
